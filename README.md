@@ -24,8 +24,9 @@ A tabela foi criada no AWS Athena e os dados estão disponíveis em uma versão 
 ### Exploração de Dados:
 A fase inicial da análise visa compreender a natureza dos dados disponíveis. Iniciaremos a exploração com a seguinte pergunta:
 
-***Quantidade de Informações na Base de Dados?***
-SELECT COUNT(*) FROM credito;
+**Quantidade de Informações na Base de Dados?**
+
+'''SELECT COUNT(*) FROM credito;'''
 
 Resposta: 2564 linhas
 
