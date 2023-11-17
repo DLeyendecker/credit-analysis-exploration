@@ -85,7 +85,7 @@ Após explorar os dados para compreender as informações disponíveis em nosso 
 
 **No conjunto de dados, quantos clientes temos em cada faixa salarial?**
 ```
-Query: select count(*), salario_anual from credito group by salario_anual
+Query: SELECT COUNT(*), salario_anual FROM credito GROUP BY salario_anual
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/94d4e0e8-dc83-4206-811e-ada6b2a07e23)
 
@@ -93,7 +93,7 @@ Query: select count(*), salario_anual from credito group by salario_anual
 
 **Nesse banco de dados, quantos clientes são homens e quantos são mulheres?**
 ```
-Query: select count(*), sexo from credito group by sexo
+Query: SELECT COUNT(*), sexo FROM credito GROUP BY sexo
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/78f1af32-5497-4998-a37f-0fd3f4f17c95)
 
@@ -101,7 +101,7 @@ Query: select count(*), sexo from credito group by sexo
 
 **Queremos focar o nosso marketing de maneira adequada para nossos clientes, qual será a idade deles?**
 ```
-Query: select avg(idade) as media_idade, min(idade) as min_idade, max(idade) as max_idade, sexo from credito group by
+Query: SELECT AVG(idade) AS media_idade, MIN(idade) AS min_idade, MAX(idade) AS max_idade, sexo FROM credito GROUP BY
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/16c006d1-962c-4022-8b97-a7d71e0ec6bd)
 
@@ -109,7 +109,7 @@ Query: select avg(idade) as media_idade, min(idade) as min_idade, max(idade) as 
 
 **Qual a maior e menor transação dos clientes?**
 ```
-Query: select min(valor_transacoes_12m) as transacao_minima, max(valor_transacoes_12m) as transacao_minima from credito
+Query: SELECT MIN(valor_transacoes_12m) AS transacao_minima, MAX(valor_transacoes_12m) AS transacao_minima FROM credito
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/3bda6071-f540-4c65-9042-bb3883f39722)
 
@@ -117,7 +117,7 @@ Query: select min(valor_transacoes_12m) as transacao_minima, max(valor_transacoe
 
 **Quais as características dos clientes que possuem os maiores creditos?**
 ```
-Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, sexo from credito where escolaridade != 'na' and tipo_cartao != 'na' group by escolaridade, tipo_cartao, sexo order by limite_credito desc limit 10
+Query: SELECT MAX(limite_credito) AS limite_credito, escolaridade, tipo_cartao, sexo FROM credito WHERE escolaridade != 'na' AND tipo_cartao != 'na' GROUP BY escolaridade, tipo_cartao, sexo ORDER BY limite_credito DESC LIMIT 10
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/2c8c2bd1-076a-48e3-a592-0c7764b0162e)
 
@@ -125,7 +125,7 @@ Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, 
 
 **Quais as características dos clientes que possuem os menores creditos?**
 ```
-Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, sexo from credito where escolaridade != 'na' and tipo_cartao != 'na' group by escolaridade, tipo_cartao, sexo order by limite_credito asc
+Query: SELECT MAX(limite_credito) AS limite_credito, escolaridade, tipo_cartao, sexo FROM credito WHERE escolaridade != 'na' and tipo_cartao != 'na' GROUP BY escolaridade, tipo_cartao, sexo ORDER BY limite_credito ASC
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/5838f508-4f93-4d94-ab1e-1d54684f80ca)
 
@@ -133,7 +133,7 @@ Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, 
 
 **Será que as mulheres gastam mais?**
 ```
-Query: select max(valor_transacoes_12m) as maior_valor_gasto, avg(valor_transacoes_12m) as media_valor_gasto, min(valor_transacoes_12m) as min_valor_gasto, sexo from credito group by sexo
+Query: SELECT MAX(valor_transacoes_12m) AS maior_valor_gasto, AVG(valor_transacoes_12m) AS media_valor_gasto, MIN(valor_transacoes_12m) AS min_valor_gasto, sexo FROM credito GROUP BY sexo
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/9981987e-89f5-4e9f-988e-0ae1632eb676)
 
@@ -143,7 +143,7 @@ Por fim,
 
 **O salário impacta no limite?**
 ```
-Query: select avg(qtd_produtos) as qts_produtos, avg(valor_transacoes_12m) as media_valor_transacoes, avg(limite_credito) as media_limite, sexo, salario_anual from credito where salario_anual != 'na' group by sexo, salario_anual order by avg(valor_transacoes_12m) desc
+Query: SELECT AVG(qtd_produtos) AS qts_produtos, AVG(valor_transacoes_12m) AS media_valor_transacoes, AVG(limite_credito) AS media_limite, sexo, salario_anual FROM credito WHERE salario_anual != 'na' GROUP BY sexo, salario_anual ORDER BY AVG(valor_transacoes_12m) DESC
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/4774ae95-319e-478e-afd2-7d0e5c1f0d16)
 
