@@ -101,9 +101,9 @@ Query: SELECT COUNT(*) AS qtd_sexo, sexo FROM credito GROUP BY sexo
 
 **Queremos focar o nosso marketing de maneira adequada para nossos clientes, qual será a idade deles?**
 ```
-Query: SELECT AVG(idade) AS media_idade, MIN(idade) AS min_idade, MAX(idade) AS max_idade, sexo FROM credito GROUP BY
+Query: SELECT AVG(idade) AS media_idade, MIN(idade) AS min_idade, MAX(idade) AS max_idade, sexo FROM credito GROUP BY sexo
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/16c006d1-962c-4022-8b97-a7d71e0ec6bd)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/9b68c434-086f-49d2-a0e3-b5ebcbb309df)
 
 <sub>Essa análise não revelou informações significativas. Ambos os sexos apresentam a mesma idade mínima, e a média é bastante semelhante. A única disparidade notável está na idade máxima, mas isso é quase irrelevante devido à diferença não ser expressiva.<sub>
 
