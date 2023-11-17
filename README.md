@@ -21,13 +21,19 @@ A tabela foi criada no AWS Athena e os dados estão disponíveis em uma versão 
 Exploração de Dados:
 A fase inicial da análise visa compreender a natureza dos dados disponíveis. Iniciaremos a exploração com a seguinte pergunta:
 
-Quantidade de Informações na Base de Dados?
+#Quantidade de Informações na Base de Dados?
 SELECT COUNT(*) FROM credito;
 
 Resposta: 2564 linhas
 
-Como são os dados
+#Como são os dados?
 Query: SELECT * FROM credito LIMIT 10;
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/fd1eb22c-f918-457c-85a9-652d29c6f79a)
 
 Observa-se a presença de dados nulos na tabela (indicados como 'na'). Vamos agora examinar mais detalhadamente os valores em cada coluna.
+
+#Vamos identificar os tipos de dados presentes em cada coluna por meio da seguinte consulta SQL: 'DESCRIBE credito
+
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/dd5915a8-b93a-47e3-8ba1-869d3fb03136)
+
+Agora que ja entendemos quais são os tipos de dados, vamos olhar mais atentamente para as varíaveis que não são numéricas.
