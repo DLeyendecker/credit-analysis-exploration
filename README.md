@@ -42,7 +42,8 @@ Query: SELECT * FROM credito LIMIT 10;
 ```
 Query: DESCRIBE credito
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/dd5915a8-b93a-47e3-8ba1-869d3fb03136)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/72addd94-88a1-4df6-b30c-9f995059f125)
+
 
 <sub>Agora que ja entendemos quais são os tipos de dados, vamos olhar mais atentamente para as varíaveis que não são numéricas.<sub>
 
