@@ -130,10 +130,10 @@ Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, 
 
 <sub>Na análise atual, notamos que não há clientes com cartão Platinum entre os menores limites. Além disso, observamos que a maioria dos limites mais baixos pertence a mulheres, enquanto nos limites mais altos, predominam homens.<sub>
 
-
-
-
-
+**Quais as características dos clientes que possuem os menores creditos?**
+```
+Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, sexo from credito where escolaridade != 'na' and tipo_cartao != 'na' group by escolaridade, tipo_cartao, sexo order by limite_credito asc
+```
 
 
 
