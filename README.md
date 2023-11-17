@@ -109,9 +109,9 @@ Query: SELECT AVG(idade) AS media_idade, MIN(idade) AS min_idade, MAX(idade) AS 
 
 **Qual a maior e menor transação dos clientes?**
 ```
-Query: SELECT MIN(valor_transacoes_12m) AS transacao_minima, MAX(valor_transacoes_12m) AS transacao_minima FROM credito
+Query: SELECT MIN(valor_transacoes_12m) AS transacao_minima, MAX(valor_transacoes_12m) AS transacao_maxima FROM credito
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/3bda6071-f540-4c65-9042-bb3883f39722)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/82b2529d-b72f-41ac-aaa0-1bcd10e07b05)
 
 <sub>Neste banco de dados, a soma das transações nos últimos 12 meses varia de 510.16 a 4776.58.<sub>
 
