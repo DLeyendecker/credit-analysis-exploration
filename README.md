@@ -26,7 +26,7 @@ A fase inicial da análise visa compreender a natureza dos dados disponíveis. I
 
 **Quantidade de Informações na Base de Dados?**
 
-```SELECT COUNT(*) FROM credito;```
+```SELECT COUNT(*) FROM credito;
 
 Resposta: 2564 linhas
 
