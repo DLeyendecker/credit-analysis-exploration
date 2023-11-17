@@ -21,10 +21,10 @@ Os dados apresentam informações sobre clientes de um banco e incluem as seguin
 
 A tabela foi criada no AWS Athena e os dados estão disponíveis em uma versão específica do S3 Bucket, acessível em: Dataset no GitHub
 
-Exploração de Dados:
+### Exploração de Dados:
 A fase inicial da análise visa compreender a natureza dos dados disponíveis. Iniciaremos a exploração com a seguinte pergunta:
 
-#Quantidade de Informações na Base de Dados?
+***Quantidade de Informações na Base de Dados?***
 SELECT COUNT(*) FROM credito;
 
 Resposta: 2564 linhas
