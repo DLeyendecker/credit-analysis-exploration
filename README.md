@@ -148,7 +148,7 @@ Query: select avg(qtd_produtos) as qts_produtos, avg(valor_transacoes_12m) as me
 
 <sub>Sim! Indivíduos com faixa salarial mais baixa também possuem limites de crédito mais baixos<sub>
 
-Conclusão:
+**Conclusão:**
 
 Com base nas análises realizadas no conjunto de dados de crédito, destacam-se alguns insights intrigantes:
 
