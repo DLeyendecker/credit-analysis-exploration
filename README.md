@@ -97,6 +97,9 @@ Query: SELECT COUNT(*) AS qtd_sexo, sexo FROM credito GROUP BY sexo
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/20aaebc5-9a0e-4ce5-b60a-acfbf924c708)
 
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/c3c21128-19a5-4187-8a6a-695f043ea98a)
+
+
 <sub>A maioria dos clientes neste banco é do sexo masculino!<sub>
 
 **Queremos focar o nosso marketing de maneira adequada para nossos clientes, qual será a idade deles?**
