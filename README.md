@@ -93,9 +93,9 @@ Query: SELECT COUNT(*), salario_anual FROM credito GROUP BY salario_anual
 
 **Nesse banco de dados, quantos clientes são homens e quantos são mulheres?**
 ```
-Query: SELECT COUNT(*), sexo FROM credito GROUP BY sexo
+Query: SELECT COUNT(*) AS qtd_sexo, sexo FROM credito GROUP BY sexo
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/78f1af32-5497-4998-a37f-0fd3f4f17c95)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/20aaebc5-9a0e-4ce5-b60a-acfbf924c708)
 
 <sub>A maioria dos clientes neste banco é do sexo masculino!<sub>
 
