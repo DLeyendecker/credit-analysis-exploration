@@ -26,11 +26,11 @@ A fase inicial da análise visa compreender a natureza dos dados disponíveis. I
 
 **Quantidade de Informações na Base de Dados?**
 ```
-SELECT COUNT(*) FROM credito;
+Query: SELECT COUNT(*) FROM credito;
 ```
 Resposta: 2564 linhas
 
-### Como são os dados?
+**Como são os dados?**
 ```
 Query: SELECT * FROM credito LIMIT 10;
 ```
@@ -38,7 +38,7 @@ Query: SELECT * FROM credito LIMIT 10;
 
 Observa-se a presença de dados nulos na tabela (indicados como 'na'). Vamos agora examinar mais detalhadamente os valores em cada coluna.
 
-### Vamos identificar os tipos de dados presentes em cada coluna por meio da seguinte consulta.
+**Vamos identificar os tipos de dados presentes em cada coluna por meio da seguinte consulta.**
 ```
 Query: DESCRIBE credito
 ```
@@ -46,7 +46,7 @@ Query: DESCRIBE credito
 
 Agora que ja entendemos quais são os tipos de dados, vamos olhar mais atentamente para as varíaveis que não são numéricas.
 
-### Quais são os tipos de escolaridade disponíveis no dataset?
+**Quais são os tipos de escolaridade disponíveis no dataset?**
 ```
 Query: SELECT DISTINCT escolaridade FROM credito
 ```
@@ -54,7 +54,7 @@ Query: SELECT DISTINCT escolaridade FROM credito
 
 Os dados incluem diversos níveis de escolaridade, sendo perceptível a presença de valores nulos (na) no conjunto de dados. Abordaremos essa questão posteriormente durante o tratamento dos dados.
 
-### Quais são os tipos de estado_civil disponíveis no dataset?
+**Quais são os tipos de estado_civil disponíveis no dataset?**
 ```
 Query: SELECT DISTINCT estado_civil FROM credito
 ```
@@ -62,7 +62,7 @@ Query: SELECT DISTINCT estado_civil FROM credito
 
 Observamos novamente a presença de valores nulos nos dados referentes ao estado civil.
 
-### Quais são os tipos de salario_anual disponíveis no dataset?
+**Quais são os tipos de salario_anual disponíveis no dataset?**
 ```
 Query: SELECT DISTINCT salario_anual FROM credito
 ```
@@ -70,7 +70,7 @@ Query: SELECT DISTINCT salario_anual FROM credito
 
 Os salários neste conjunto de dados não são apresentados com o valor exato do ganho do cliente. Em vez disso, as informações estão categorizadas em faixas salariais. Além disso, há registros contendo valores nulos.
 
-### Quais são os tipos de cartão disponíveis no dataset?
+**Quais são os tipos de cartão disponíveis no dataset?**
 ```
 Query: SELECT DISTINCT tipo_cartao FROM credito
 ```
