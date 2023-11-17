@@ -1,6 +1,6 @@
 ### Exploração e análise de dados de crédito com SQL
 
-*Descrição dos Dados:
+**Descrição dos Dados:**
 Os dados apresentam informações sobre clientes de um banco e incluem as seguintes colunas:
 
 idade: idade do cliente
