@@ -87,7 +87,7 @@ Após explorar os dados para compreender as informações disponíveis em nosso 
 ```
 Query: SELECT COUNT(*), salario_anual FROM credito GROUP BY salario_anual
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/94d4e0e8-dc83-4206-811e-ada6b2a07e23)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/ce49bd9a-6f79-4b26-beca-fefaeeb75359)
 
 <sub>A predominância na base de dados é de clientes com renda inferior a 40K, havendo 235 casos em que a informação sobre a faixa salarial não foi fornecida ou está ausente. De certo modo, pode ser estrategicamente interessante para a empresa direcionar seu foco a esse público de menor renda.<sub>
 
