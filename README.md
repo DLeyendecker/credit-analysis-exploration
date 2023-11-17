@@ -32,7 +32,7 @@ Resposta: 2564 linhas
 
 ###Como são os dados?
 
-```Query: SELECT * FROM credito LIMIT 10;
+Query: SELECT * FROM credito LIMIT 10;```
 
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/fd1eb22c-f918-457c-85a9-652d29c6f79a)
 
