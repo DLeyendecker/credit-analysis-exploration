@@ -51,7 +51,7 @@ Query: DESCRIBE credito
 ```
 Query: SELECT DISTINCT escolaridade FROM credito
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/fc23f1ab-02d8-44ae-9b26-fc84d7c33c4d)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/c8ad8529-9ddf-4341-b69d-e756d9a3faa1)
 
 <sub>Os dados incluem diversos níveis de escolaridade, sendo perceptível a presença de valores nulos (na) no conjunto de dados. Abordaremos essa questão posteriormente durante o tratamento dos dados.<sub>
 
@@ -59,7 +59,7 @@ Query: SELECT DISTINCT escolaridade FROM credito
 ```
 Query: SELECT DISTINCT estado_civil FROM credito
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/2bce9498-8064-4e30-af18-e270b2217594)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/92d743ce-9a8c-4eb6-a164-c969d05878b6)
 
 <sub>Observamos novamente a presença de valores nulos nos dados referentes ao estado civil.<sub>
 
@@ -67,7 +67,7 @@ Query: SELECT DISTINCT estado_civil FROM credito
 ```
 Query: SELECT DISTINCT salario_anual FROM credito
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/93642ad4-10c0-4ae6-811c-794afedd5235)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/d51d3d1a-42c3-4727-86bc-1f9546504f1e)
 
 <sub>Os salários neste conjunto de dados não são apresentados com o valor exato do ganho do cliente. Em vez disso, as informações estão categorizadas em faixas salariais. Além disso, há registros contendo valores nulos.<sub>
 
@@ -75,7 +75,7 @@ Query: SELECT DISTINCT salario_anual FROM credito
 ```
 Query: SELECT DISTINCT tipo_cartao FROM credito
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/4042beee-3882-47b4-bb88-21f04becab62)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/f7523c88-2e0a-4852-b444-edb4efda5990)
 
 <sub>Aqui, observamos que não é necessário lidar com valores nulos.<sub>
 
