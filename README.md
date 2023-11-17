@@ -4,7 +4,6 @@
 Os dados apresentam informações sobre clientes de um banco e incluem as seguintes colunas:
 
 idade: idade do cliente
-
 sexo: gênero do cliente (F ou M)
 dependentes: número de dependentes do cliente
 escolaridade: nível de escolaridade do cliente
