@@ -125,7 +125,7 @@ Query: SELECT MAX(limite_credito) AS limite_credito, escolaridade, tipo_cartao, 
 
 **Quais as características dos clientes que possuem os menores creditos?**
 ```
-Query: SELECT MAX(limite_credito) AS limite_credito, escolaridade, tipo_cartao, sexo FROM credito WHERE escolaridade != 'na' and tipo_cartao != 'na' GROUP BY escolaridade, tipo_cartao, sexo ORDER BY limite_credito ASC
+Query: SELECT MAX(limite_credito) AS limite_credito, escolaridade, tipo_cartao, sexo FROM credito WHERE escolaridade != 'na' AND tipo_cartao != 'na' GROUP BY escolaridade, tipo_cartao, sexo ORDER BY limite_credito ASC
 ```
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/5838f508-4f93-4d94-ab1e-1d54684f80ca)
 
