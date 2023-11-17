@@ -30,8 +30,10 @@ A fase inicial da análise visa compreender a natureza dos dados disponíveis. I
 
 Resposta: 2564 linhas
 
-#Como são os dados?
-Query: SELECT * FROM credito LIMIT 10;
+###Como são os dados?
+
+```Query: SELECT * FROM credito LIMIT 10;
+
 ![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/fd1eb22c-f918-457c-85a9-652d29c6f79a)
 
 Observa-se a presença de dados nulos na tabela (indicados como 'na'). Vamos agora examinar mais detalhadamente os valores em cada coluna.
