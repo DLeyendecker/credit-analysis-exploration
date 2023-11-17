@@ -1,5 +1,8 @@
-Exploração e análise de dados de crédito com SQL
+### Exploração e análise de dados de crédito com SQL
 
+- Formação em Python para Data Science pela Alura (2023)
+- Formação em Power BI pela Digital Innovation One (2023)
+- Formação em Database pela Digital Innovation One (2023)
 Descrição dos Dados:
 Os dados apresentam informações sobre clientes de um banco e incluem as seguintes colunas:
 
