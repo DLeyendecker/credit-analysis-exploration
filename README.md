@@ -118,7 +118,7 @@ Query: select min(valor_transacoes_12m) as transacao_minima, max(valor_transacoe
 ```
 Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, sexo from credito where escolaridade != 'na' and tipo_cartao != 'na' group by escolaridade, tipo_cartao, sexo order by limite_credito desc limit 10
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/5838f508-4f93-4d94-ab1e-1d54684f80ca)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/2c8c2bd1-076a-48e3-a592-0c7764b0162e)
 
 <sub>Parece não haver um impacto da escolaridade no limite, uma vez que o limite mais alto é oferecido a um homem sem educação formal. Além disso, não parece haver relação entre o tipo de cartão, a escolaridade e o limite. Entre os maiores limites, identificamos clientes com os cartões Gold, Silver, Platinum e Blue.<sub>
 
@@ -126,14 +126,42 @@ Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, 
 ```
 Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, sexo from credito where escolaridade != 'na' and tipo_cartao != 'na' group by escolaridade, tipo_cartao, sexo order by limite_credito asc
 ```
-![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/2c8c2bd1-076a-48e3-a592-0c7764b0162e)
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/5838f508-4f93-4d94-ab1e-1d54684f80ca)
 
 <sub>Na análise atual, notamos que não há clientes com cartão Platinum entre os menores limites. Além disso, observamos que a maioria dos limites mais baixos pertence a mulheres, enquanto nos limites mais altos, predominam homens.<sub>
 
-**Quais as características dos clientes que possuem os menores creditos?**
+**Será que as mulheres gastam mais?**
 ```
-Query: select max(limite_credito) as limite_credito, escolaridade, tipo_cartao, sexo from credito where escolaridade != 'na' and tipo_cartao != 'na' group by escolaridade, tipo_cartao, sexo order by limite_credito asc
+Query: select max(valor_transacoes_12m) as maior_valor_gasto, avg(valor_transacoes_12m) as media_valor_gasto, min(valor_transacoes_12m) as min_valor_gasto, sexo from credito group by sexo
 ```
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/9981987e-89f5-4e9f-988e-0ae1632eb676)
+
+<sub>Apesar das diferenças nos limites de crédito, os gastos entre homens e mulheres mostram-se semelhantes!<sub>
+
+Por fim,
+
+**O salário impacta no limite?**
+```
+Query: select avg(qtd_produtos) as qts_produtos, avg(valor_transacoes_12m) as media_valor_transacoes, avg(limite_credito) as media_limite, sexo, salario_anual from credito where salario_anual != 'na' group by sexo, salario_anual order by avg(valor_transacoes_12m) desc
+```
+![image](https://github.com/DLeyendecker/credit-analysis-exploration/assets/123911132/4774ae95-319e-478e-afd2-7d0e5c1f0d16)
+
+<sub>Sim! Indivíduos com faixa salarial mais baixa também possuem limites de crédito mais baixos<sub>
+
+Conclusão:
+
+Com base nas análises realizadas no conjunto de dados de crédito, destacam-se alguns insights intrigantes:
+
+- A maioria dos clientes possui uma renda de até 40K.
+- A predominância de clientes é do sexo masculino.
+- A escolaridade não parece ser um fator determinante para o limite ou tipo de cartão.
+- Os clientes com os limites mais elevados são predominantemente homens.
+- Mulheres compõem a maioria dos clientes com limites mais baixos.
+- Não há presença de cartão Platinum entre os clientes com limites mais baixos.
+- A faixa salarial exerce uma influência direta sobre o limite de crédito.
+- Não foram identificados clientes do sexo feminino com salário anual acima de 60K.
+  
+Essas conclusões proporcionam uma visão abrangente do perfil dos clientes, fornecendo informações valiosas para estratégias de marketing e tomada de decisões no âmbito financeiro.
 
 
 
